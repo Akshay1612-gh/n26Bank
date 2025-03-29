@@ -1,0 +1,54 @@
+N26 Bank Customer Feedback Analysis
+
+Objective :
+This project involves analyzing Trustpilot reviews for N26 Bank to understand customer sentiment, review patterns, and operational gaps. 
+Using web scraping, data processing, SQL, Python, and Power BI, it delivers actionable insights and visualizations to enhance customer experience and support strategic decisions.
+
+
+Web Scraping:
+Extracted customer reviews from Trustpilot using Python libraries (requests and BeautifulSoup).
+Collected key data columns: Customer Name, Customer Review, N26 Response, Date of Experience, Date of Review, and Rating Out of 5.
+Stored the data in a CSV file, ensuring ethical scraping practices with delays using time.sleep.
+
+Data Processing:
+Cleaned and prepared the data in Jupyter Notebook using pandas.
+
+Added derived columns:
+
+Sentiments: Categorized reviews as Positive, Neutral, or Negative.
+Difference in Days: Calculated delay between the date of experience and review submission.
+Year: Extracted the review year for time-based analysis.
+Removed duplicates and addressed missing values.
+
+Python Analysis:
+Analyzed data to extract insights:
+Calculated the difference between date_of_experience and date_of_review.
+Counted total reviews and grouped them by star ratings (1 to 5).
+Determined minimum and maximum response times between N26 and customers.
+Counted unanswered reviews by N26.
+Analyzed sentiment trends, focusing on 2024.
+
+SQL Analysis:
+Conducted advanced analysis to uncover trends:
+Monthly distribution of ratings for 2024.
+Sentiment shifts (Positive, Neutral, Negative) across 2024 months.
+Daily patterns of review submissions in 2024.
+Identified reviews with the longest delays between experience and submission.
+Calculated monthly growth rates for positive and negative reviews.
+
+Power BI Dashboard:
+Designed an interactive dashboard with key visualizations:
+Monthly Sentiment Analysis: Stacked Column Chart showcasing Positive, Neutral, and Negative trends.
+Daily Review Submissions: Line Chart for 2024 submission patterns.
+Growth Metrics: Line Charts comparing growth rates for positive and negative reviews.
+Response Time Analysis: Cards summarizing delays and tables for minimum/maximum response times.
+Unanswered Reviews: Matrix categorizing unanswered feedback by sentiment and rating.
+Customer Insights: Tables showcasing top customers and sentiment trends.
+
+
+This analysis empowers N26 Bank with:
+
+Enhanced Customer Satisfaction: By addressing negative feedback and sentiment trends, the bank can focus on delivering a superior customer experience.
+Improved Customer Support Operations: Insights into response times and unanswered feedback can help streamline support processes.
+Strategic Decision-Making: Actionable insights into review growth rates, sentiment patterns, and customer behavior provide valuable information for long-term strategy planning.
+Growth Opportunities: Positive sentiment trends and influential customer segments present opportunities to strengthen engagement and loyalty.
